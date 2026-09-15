@@ -1,0 +1,19 @@
+% latexdiff --preamble に渡す。追加は青字のみ、削除は出さない。
+\usepackage{xcolor}
+\definecolor{diffcolor}{rgb}{0,0,0.75}
+
+\providecommand{\DIFadd}[1]{{\protect\color{diffcolor}#1}}
+\providecommand{\DIFdel}[1]{}
+\providecommand{\DIFaddbegin}{}
+\providecommand{\DIFaddend}{}
+\providecommand{\DIFdelbegin}{}
+\providecommand{\DIFdelend}{}
+\providecommand{\DIFmodbegin}{}
+\providecommand{\DIFmodend}{}
+
+\providecommand{\DIFaddFL}[1]{\DIFadd{#1}}
+\providecommand{\DIFdelFL}[1]{}
+\providecommand{\DIFaddbeginFL}{}
+\providecommand{\DIFaddendFL}{}
+\providecommand{\DIFdelbeginFL}{}
+\providecommand{\DIFdelendFL}{}

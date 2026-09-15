@@ -57,6 +57,7 @@ torch.set_default_device(device)
 ## skill
 
 - 論文を書く・直すときは `paper` を読む。
+- 論文を添削する・添削に出すときは `polish` を読む。
 - npz から図表を作るときは `figure` を読む。
 - リポジトリを公開するときは `release` を読む。
 

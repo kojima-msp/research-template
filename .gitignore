@@ -33,6 +33,8 @@ paper/*.fls
 paper/*.log
 paper/*.out
 paper/*.synctex.gz
+paper/diff.tex
+paper/diff.pdf
 
 # ruff
 .ruff_cache/
