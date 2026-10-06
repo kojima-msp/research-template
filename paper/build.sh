@@ -18,5 +18,5 @@ if [ -f "$old" ]; then
 fi
 
 latexmk -cd -pdf "$@"
-latexmk -cd -c "$@"
+latexmk -cd -c -bibtex "$@"
 rm -f paper/diff.tex
