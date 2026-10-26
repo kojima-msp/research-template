@@ -103,8 +103,8 @@ IEEE 向け英文原稿の基準。`SKILL.md` で足りないときに読む。
   変わる。
 - 複合語: `time-varying`, `graph-based`, `data-driven`, `model-based`, `end-to-end`,
   `real-world`, `large-scale`, `matrix-free`, `eigendecomposition-free`,
-  `closed-form`。形容詞のときは `vertex-domain` / `spectral-domain`、名詞句のときは
-  `in the vertex domain` / `in the spectral domain`。
+  `closed-form`。形容詞のときは `node-domain` / `spectral-domain`、名詞句のときは
+  `in the node domain` / `in the spectral domain`。
 - 分野で定着した綴りを、一般的な辞書に合わせるためだけに変えない。
 
 ## GSP の用語
@@ -114,7 +114,7 @@ IEEE 向け英文原稿の基準。`SKILL.md` で足りないときに読む。
 - graph signal processing (GSP)
 - graph Fourier transform (GFT)
 - graph Laplacian と variation operator
-- vertex domain / graph spectral domain / graph frequency domain
+- node domain / graph spectral domain / graph frequency domain
 - graph signal / signal on a graph / a class of graph signals
 - sampling set / sampled signal / downsampling / upsampling / reconstruction
 - graph filter / correction filter / sampling filter / reconstruction filter
