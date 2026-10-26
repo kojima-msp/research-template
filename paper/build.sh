@@ -9,11 +9,14 @@ new=${2:-paper/main.tex}
 set -- "$new"
 if [ -f "$old" ]; then
 	# --no-del は削除された語句だけを取り除くので、その前後の空白が残る。句読点の
-	# 直前に空いた分を詰める。
+	# 直前に空いた分を詰める。新しく足した式では、latexdiff が角括弧の前後で印を
+	# 区切るので、\left[ と \right] が別の印に分かれて組が壊れる。対にしなくてよい
+	# \bigl[ と \bigr] に置き換える。
 	latexdiff --no-del --graphics-markup=none \
 		--preamble=paper/diff-preamble.tex \
 		"$old" "$new" \
-		| sed -E 's/([^[:space:]]) +([.,;:])/\1\2/g' >paper/diff.tex
+		| sed -E 's/([^[:space:]]) +([.,;:])/\1\2/g' \
+		| sed -e 's/\\left\[/\\bigl[/g' -e 's/\\right\]/\\bigr]/g' >paper/diff.tex
 	set -- "$@" paper/diff.tex
 fi
 
